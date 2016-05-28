@@ -7,9 +7,7 @@ import bodyParser from 'body-parser';
 export default class Server {
 
 	constructor( app ){
-		console.log('server started with gls ..');
 		this._app = app;
-
 		this.initApp();
 		this.initRoutes();
 		this.startApp();
