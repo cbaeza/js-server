@@ -1,9 +1,9 @@
 # js-server
-Node JS server based on EC6
+Node JS server based on ECMAScript 6 (ES6)
 
 ## Features
 - Nodejs server
-- EC6 dialect, compiled by babel
+- ES6 dialect, compiled by babel
 - Gulp task
 
 ## Build & run
