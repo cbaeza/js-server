@@ -8,10 +8,16 @@ import UsersMdl from './UsersMdl.js';
 export default class UsersCtrl{
 
 	constructor(){
-		this.model = new UsersMdl();
+		this._model = new UsersMdl();
 	}
 
-	get users(){
-		return this.model.allUsers;
+	user(req, res){
+		console.log(req.params.id);
+		return res.send('user: ' + req.params.id);
+	}
+
+	users(req, res){
+		// console.log(this._model.allUsers);
+		return res.send('a lot of users');
 	}
 }

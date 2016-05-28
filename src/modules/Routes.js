@@ -6,18 +6,17 @@ export default class Routes {
 
 	constructor(){
 		this._routes = [];
-		this.usersCtrl = new UsersCtrl();
+		this._usersCtrl = new UsersCtrl();
 		this.createRoutes();
 	} // constructor
 
 	createRoutes(){
-		this.routes.push( 
+		this._routes.push( 
 			{ method: 'GET',
 				routes:
 				[
-					{ route: '/', msg: 'Hello World !', res: JSON.stringify(this.usersCtrl.users)},
-					{ route: '/1', msg: 'Hello World /1 !'}
-
+					{ route: '/users'		, handler: this._usersCtrl.users },
+					{ route: '/user/:id'	, handler: this._usersCtrl.user }
 				]
 			}
 		);
