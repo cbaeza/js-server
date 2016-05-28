@@ -4,7 +4,8 @@ Node JS server based on ECMAScript 6 (ES6)
 ## Features
 - Nodejs server
 - ES6 dialect, compiled by babel
-- Gulp task
+- Express framework
+- Gulp
 
 ## Build & run
 	>npm install
